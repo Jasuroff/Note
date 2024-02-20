@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#4CAF50"
+        android:id="@+id/addEdit"
+        android:text="Addition Part"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_height="?actionBarSize"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="write the title"
+            android:maxLines="1"
+            android:paddingEnd="20dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="write the subtitle"
+            android:maxLines="1"
+            android:paddingEnd="20dp"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="write the description!"
+            android:maxLines="1"
+            android:paddingEnd="20dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/prorety1"
+            android:src="@drawable/ic_check"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#E91E63"
+            android:clickable="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/prorety2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#4CAF50"
+            android:clickable="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/prorety3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#FFEB3B"
+            android:clickable="true" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/saveBtn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/save_btn_shape"
+        android:padding="3dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        android:text="save"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+</FrameLayout>
